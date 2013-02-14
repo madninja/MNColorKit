@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B801A43916CDAC1600E859AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B801A43816CDAC1600E859AB /* Foundation.framework */; };
+		B801A43E16CDAC1600E859AB /* MNColorKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B801A43D16CDAC1600E859AB /* MNColorKit.h */; };
+		B801A44016CDAC1600E859AB /* MNColorKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B801A43F16CDAC1600E859AB /* MNColorKit.m */; };
+		B801A44816CDAC1600E859AB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B801A44716CDAC1600E859AB /* SenTestingKit.framework */; };
+		B801A44A16CDAC1600E859AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B801A44916CDAC1600E859AB /* UIKit.framework */; };
+		B801A44B16CDAC1600E859AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B801A43816CDAC1600E859AB /* Foundation.framework */; };
+		B801A44E16CDAC1600E859AB /* libMNColorKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B801A43516CDAC1600E859AB /* libMNColorKit.a */; };
+		B801A45416CDAC1600E859AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B801A45216CDAC1600E859AB /* InfoPlist.strings */; };
+		B801A45716CDAC1600E859AB /* MNColorKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B801A45616CDAC1600E859AB /* MNColorKitTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B801A44C16CDAC1600E859AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B801A42D16CDAC1600E859AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B801A43416CDAC1600E859AB;
+			remoteInfo = MNColorKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B801A43316CDAC1600E859AB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				B801A43E16CDAC1600E859AB /* MNColorKit.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B801A43516CDAC1600E859AB /* libMNColorKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMNColorKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B801A43816CDAC1600E859AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B801A43C16CDAC1600E859AB /* MNColorKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MNColorKit-Prefix.pch"; sourceTree = "<group>"; };
+		B801A43D16CDAC1600E859AB /* MNColorKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNColorKit.h; sourceTree = "<group>"; };
+		B801A43F16CDAC1600E859AB /* MNColorKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNColorKit.m; sourceTree = "<group>"; };
+		B801A44616CDAC1600E859AB /* MNColorKitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MNColorKitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B801A44716CDAC1600E859AB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B801A44916CDAC1600E859AB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B801A45116CDAC1600E859AB /* MNColorKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MNColorKitTests-Info.plist"; sourceTree = "<group>"; };
+		B801A45316CDAC1600E859AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B801A45516CDAC1600E859AB /* MNColorKitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNColorKitTests.h; sourceTree = "<group>"; };
+		B801A45616CDAC1600E859AB /* MNColorKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNColorKitTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B801A43216CDAC1600E859AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B801A43916CDAC1600E859AB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B801A44216CDAC1600E859AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B801A44816CDAC1600E859AB /* SenTestingKit.framework in Frameworks */,
+				B801A44A16CDAC1600E859AB /* UIKit.framework in Frameworks */,
+				B801A44B16CDAC1600E859AB /* Foundation.framework in Frameworks */,
+				B801A44E16CDAC1600E859AB /* libMNColorKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B801A42C16CDAC1600E859AB = {
+			isa = PBXGroup;
+			children = (
+				B801A43A16CDAC1600E859AB /* MNColorKit */,
+				B801A44F16CDAC1600E859AB /* MNColorKitTests */,
+				B801A43716CDAC1600E859AB /* Frameworks */,
+				B801A43616CDAC1600E859AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B801A43616CDAC1600E859AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B801A43516CDAC1600E859AB /* libMNColorKit.a */,
+				B801A44616CDAC1600E859AB /* MNColorKitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B801A43716CDAC1600E859AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B801A43816CDAC1600E859AB /* Foundation.framework */,
+				B801A44716CDAC1600E859AB /* SenTestingKit.framework */,
+				B801A44916CDAC1600E859AB /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B801A43A16CDAC1600E859AB /* MNColorKit */ = {
+			isa = PBXGroup;
+			children = (
+				B801A43D16CDAC1600E859AB /* MNColorKit.h */,
+				B801A43F16CDAC1600E859AB /* MNColorKit.m */,
+				B801A43B16CDAC1600E859AB /* Supporting Files */,
+			);
+			path = MNColorKit;
+			sourceTree = "<group>";
+		};
+		B801A43B16CDAC1600E859AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B801A43C16CDAC1600E859AB /* MNColorKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B801A44F16CDAC1600E859AB /* MNColorKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				B801A45516CDAC1600E859AB /* MNColorKitTests.h */,
+				B801A45616CDAC1600E859AB /* MNColorKitTests.m */,
+				B801A45016CDAC1600E859AB /* Supporting Files */,
+			);
+			path = MNColorKitTests;
+			sourceTree = "<group>";
+		};
+		B801A45016CDAC1600E859AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B801A45116CDAC1600E859AB /* MNColorKitTests-Info.plist */,
+				B801A45216CDAC1600E859AB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B801A43416CDAC1600E859AB /* MNColorKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B801A45A16CDAC1600E859AB /* Build configuration list for PBXNativeTarget "MNColorKit" */;
+			buildPhases = (
+				B801A43116CDAC1600E859AB /* Sources */,
+				B801A43216CDAC1600E859AB /* Frameworks */,
+				B801A43316CDAC1600E859AB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MNColorKit;
+			productName = MNColorKit;
+			productReference = B801A43516CDAC1600E859AB /* libMNColorKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B801A44516CDAC1600E859AB /* MNColorKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B801A45D16CDAC1600E859AB /* Build configuration list for PBXNativeTarget "MNColorKitTests" */;
+			buildPhases = (
+				B801A44116CDAC1600E859AB /* Sources */,
+				B801A44216CDAC1600E859AB /* Frameworks */,
+				B801A44316CDAC1600E859AB /* Resources */,
+				B801A44416CDAC1600E859AB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B801A44D16CDAC1600E859AB /* PBXTargetDependency */,
+			);
+			name = MNColorKitTests;
+			productName = MNColorKitTests;
+			productReference = B801A44616CDAC1600E859AB /* MNColorKitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B801A42D16CDAC1600E859AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "imadjine, LLC";
+			};
+			buildConfigurationList = B801A43016CDAC1600E859AB /* Build configuration list for PBXProject "MNColorKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B801A42C16CDAC1600E859AB;
+			productRefGroup = B801A43616CDAC1600E859AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B801A43416CDAC1600E859AB /* MNColorKit */,
+				B801A44516CDAC1600E859AB /* MNColorKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B801A44316CDAC1600E859AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B801A45416CDAC1600E859AB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B801A44416CDAC1600E859AB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B801A43116CDAC1600E859AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B801A44016CDAC1600E859AB /* MNColorKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B801A44116CDAC1600E859AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B801A45716CDAC1600E859AB /* MNColorKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B801A44D16CDAC1600E859AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B801A43416CDAC1600E859AB /* MNColorKit */;
+			targetProxy = B801A44C16CDAC1600E859AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B801A45216CDAC1600E859AB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B801A45316CDAC1600E859AB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B801A45816CDAC1600E859AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B801A45916CDAC1600E859AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B801A45B16CDAC1600E859AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MNColorKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MNColorKit/MNColorKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B801A45C16CDAC1600E859AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MNColorKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MNColorKit/MNColorKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B801A45E16CDAC1600E859AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MNColorKit/MNColorKit-Prefix.pch";
+				INFOPLIST_FILE = "MNColorKitTests/MNColorKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B801A45F16CDAC1600E859AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MNColorKit/MNColorKit-Prefix.pch";
+				INFOPLIST_FILE = "MNColorKitTests/MNColorKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B801A43016CDAC1600E859AB /* Build configuration list for PBXProject "MNColorKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B801A45816CDAC1600E859AB /* Debug */,
+				B801A45916CDAC1600E859AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B801A45A16CDAC1600E859AB /* Build configuration list for PBXNativeTarget "MNColorKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B801A45B16CDAC1600E859AB /* Debug */,
+				B801A45C16CDAC1600E859AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B801A45D16CDAC1600E859AB /* Build configuration list for PBXNativeTarget "MNColorKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B801A45E16CDAC1600E859AB /* Debug */,
+				B801A45F16CDAC1600E859AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B801A42D16CDAC1600E859AB /* Project object */;
+}
