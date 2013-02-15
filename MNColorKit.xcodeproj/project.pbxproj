@@ -16,6 +16,9 @@
 		B801A44E16CDAC1600E859AB /* libMNColorKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B801A43516CDAC1600E859AB /* libMNColorKit.a */; };
 		B801A45416CDAC1600E859AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B801A45216CDAC1600E859AB /* InfoPlist.strings */; };
 		B801A45716CDAC1600E859AB /* MNColorKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B801A45616CDAC1600E859AB /* MNColorKitTests.m */; };
+		B801A46116CDAC9F00E859AB /* RGBX.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B801A46016CDAC7400E859AB /* RGBX.h */; };
+		B801A46416CDACF500E859AB /* UIView+MNColorKitImages.m in Sources */ = {isa = PBXBuildFile; fileRef = B801A46316CDACF500E859AB /* UIView+MNColorKitImages.m */; };
+		B801A46A16CDB15500E859AB /* MNColoredButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B801A46916CDB15500E859AB /* MNColoredButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,7 @@
 			dstSubfolderSpec = 16;
 			files = (
 				B801A43E16CDAC1600E859AB /* MNColorKit.h in CopyFiles */,
+				B801A46116CDAC9F00E859AB /* RGBX.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +58,11 @@
 		B801A45316CDAC1600E859AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B801A45516CDAC1600E859AB /* MNColorKitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNColorKitTests.h; sourceTree = "<group>"; };
 		B801A45616CDAC1600E859AB /* MNColorKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNColorKitTests.m; sourceTree = "<group>"; };
+		B801A46016CDAC7400E859AB /* RGBX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGBX.h; sourceTree = "<group>"; };
+		B801A46216CDACF500E859AB /* UIView+MNColorKitImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MNColorKitImages.h"; sourceTree = "<group>"; };
+		B801A46316CDACF500E859AB /* UIView+MNColorKitImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MNColorKitImages.m"; sourceTree = "<group>"; };
+		B801A46816CDB15500E859AB /* MNColoredButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNColoredButton.h; sourceTree = "<group>"; };
+		B801A46916CDB15500E859AB /* MNColoredButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNColoredButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				B801A43A16CDAC1600E859AB /* MNColorKit */,
+				B801A43B16CDAC1600E859AB /* Supporting Files */,
 				B801A44F16CDAC1600E859AB /* MNColorKitTests */,
 				B801A43716CDAC1600E859AB /* Frameworks */,
 				B801A43616CDAC1600E859AB /* Products */,
@@ -111,9 +121,13 @@
 		B801A43A16CDAC1600E859AB /* MNColorKit */ = {
 			isa = PBXGroup;
 			children = (
+				B801A46816CDB15500E859AB /* MNColoredButton.h */,
+				B801A46916CDB15500E859AB /* MNColoredButton.m */,
 				B801A43D16CDAC1600E859AB /* MNColorKit.h */,
 				B801A43F16CDAC1600E859AB /* MNColorKit.m */,
-				B801A43B16CDAC1600E859AB /* Supporting Files */,
+				B801A46016CDAC7400E859AB /* RGBX.h */,
+				B801A46216CDACF500E859AB /* UIView+MNColorKitImages.h */,
+				B801A46316CDACF500E859AB /* UIView+MNColorKitImages.m */,
 			);
 			path = MNColorKit;
 			sourceTree = "<group>";
@@ -124,6 +138,7 @@
 				B801A43C16CDAC1600E859AB /* MNColorKit-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = MNColorKit;
 			sourceTree = "<group>";
 		};
 		B801A44F16CDAC1600E859AB /* MNColorKitTests */ = {
@@ -244,6 +259,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B801A44016CDAC1600E859AB /* MNColorKit.m in Sources */,
+				B801A46416CDACF500E859AB /* UIView+MNColorKitImages.m in Sources */,
+				B801A46A16CDB15500E859AB /* MNColoredButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
