@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.subspec 'ImageColor' do |images|
     images.source_files = 'MNColorKit/UIView+MNColorKitImages.{hm}'
     images.framework    = 'UIKit'
-    images.dependency   = 'MNColorKit/RGBX'
+    images.dependency   = 'RGBX'
   end
 
   s.subspec 'Controls' do |images|
