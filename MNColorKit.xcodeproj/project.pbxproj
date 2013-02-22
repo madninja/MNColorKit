@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B801A43916CDAC1600E859AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B801A43816CDAC1600E859AB /* Foundation.framework */; };
 		B801A43E16CDAC1600E859AB /* MNColorKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B801A43D16CDAC1600E859AB /* MNColorKit.h */; };
-		B801A44016CDAC1600E859AB /* MNColorKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B801A43F16CDAC1600E859AB /* MNColorKit.m */; };
 		B801A44816CDAC1600E859AB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B801A44716CDAC1600E859AB /* SenTestingKit.framework */; };
 		B801A44A16CDAC1600E859AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B801A44916CDAC1600E859AB /* UIKit.framework */; };
 		B801A44B16CDAC1600E859AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B801A43816CDAC1600E859AB /* Foundation.framework */; };
@@ -50,7 +49,6 @@
 		B801A43816CDAC1600E859AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B801A43C16CDAC1600E859AB /* MNColorKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MNColorKit-Prefix.pch"; sourceTree = "<group>"; };
 		B801A43D16CDAC1600E859AB /* MNColorKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNColorKit.h; sourceTree = "<group>"; };
-		B801A43F16CDAC1600E859AB /* MNColorKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNColorKit.m; sourceTree = "<group>"; };
 		B801A44616CDAC1600E859AB /* MNColorKitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MNColorKitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B801A44716CDAC1600E859AB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		B801A44916CDAC1600E859AB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -124,7 +122,6 @@
 				B801A46816CDB15500E859AB /* MNColoredButton.h */,
 				B801A46916CDB15500E859AB /* MNColoredButton.m */,
 				B801A43D16CDAC1600E859AB /* MNColorKit.h */,
-				B801A43F16CDAC1600E859AB /* MNColorKit.m */,
 				B801A46016CDAC7400E859AB /* RGBX.h */,
 				B801A46216CDACF500E859AB /* UIView+MNColorKitImages.h */,
 				B801A46316CDACF500E859AB /* UIView+MNColorKitImages.m */,
@@ -258,7 +255,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B801A44016CDAC1600E859AB /* MNColorKit.m in Sources */,
 				B801A46416CDACF500E859AB /* UIView+MNColorKitImages.m in Sources */,
 				B801A46A16CDB15500E859AB /* MNColoredButton.m in Sources */,
 			);
@@ -420,6 +416,7 @@
 				B801A45C16CDAC1600E859AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B801A45D16CDAC1600E859AB /* Build configuration list for PBXNativeTarget "MNColorKitTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +425,7 @@
 				B801A45F16CDAC1600E859AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

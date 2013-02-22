@@ -6,8 +6,6 @@
 //  Copyright (c) 2013 imadjine, LLC. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-@interface MNColorKit : NSObject
-
-@end
+#import "RGBX.h"
+#import "MNColoredButton.h"
+#import "UIView+MNColorKitImages.h"
