@@ -13,21 +13,6 @@ Pod::Spec.new do |s|
   }
 
   s.platform = :ios, '5.0'
-  s.source_files = 'MNColorKit/'
-
-  s.subspec 'RGBX' do |rgbx|
-    rgbx.source_files = 'MNColorKit/RGBX.h'
-    rgbx.framework    = 'UIKit'
-  end
-
-  s.subspec 'ImageColor' do |images|
-    images.source_files = 'MNColorKit/UIView+MNColorKitImages.{hm}'
-    images.framework    = 'UIKit'
-  end
-
-  s.subspec 'Controls' do |images|
-    images.source_files = 'MNColorKit/MNColoredButton.{hm}'
-    images.framework    = 'QuartzCore'
-  end
+  s.source_files = 'MNColorKit/*.{hm}'
 
 end

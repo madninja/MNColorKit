@@ -11,13 +11,13 @@
 
 @interface MNColoredButton()
 
-@property(readonly,nonatomic)UIColor *highlightBackgroundColor;
-@property(readonly,nonatomic)UIColor *normalBackgroundColor;
-@property(readonly,nonatomic)UIColor *disabledBackgroundColor;
+@property(strong,nonatomic)UIColor *highlightBackgroundColor;
+@property(strong,nonatomic)UIColor *normalBackgroundColor;
+@property(strong,nonatomic)UIColor *disabledBackgroundColor;
 
-@property(readonly,nonatomic)UIColor *highlightTitleColor;
-@property(readonly,nonatomic)UIColor *normalTitleColor;
-@property(readonly,nonatomic)UIColor *disabledTitleColor;
+@property(strong,nonatomic)UIColor *highlightTitleColor;
+@property(strong,nonatomic)UIColor *normalTitleColor;
+@property(strong,nonatomic)UIColor *disabledTitleColor;
 
 @end
 
@@ -77,13 +77,13 @@
 {
     switch (state) {
         case UIControlStateNormal:
-            _normalBackgroundColor = backgroundColor;
+            self.normalBackgroundColor = backgroundColor;
             break;
         case UIControlStateDisabled:
-            _disabledBackgroundColor = backgroundColor;
+            self.disabledBackgroundColor = backgroundColor;
             break;
         case UIControlStateHighlighted:
-            _highlightBackgroundColor = backgroundColor;
+            self.highlightBackgroundColor = backgroundColor;
         default:
             break;
     }
@@ -94,13 +94,13 @@
 {
     switch (state) {
         case UIControlStateNormal:
-            _normalTitleColor = color;
+            self.normalTitleColor = color;
             break;
         case UIControlStateDisabled:
-            _disabledTitleColor = color;
+            self.disabledTitleColor = color;
             break;
         case UIControlStateHighlighted:
-            _highlightTitleColor = color;
+            self.highlightTitleColor = color;
         default:
             break;
     }
