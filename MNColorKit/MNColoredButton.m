@@ -15,10 +15,6 @@
 @property(strong,nonatomic)UIColor *normalBackgroundColor;
 @property(strong,nonatomic)UIColor *disabledBackgroundColor;
 
-@property(strong,nonatomic)UIColor *highlightTitleColor;
-@property(strong,nonatomic)UIColor *normalTitleColor;
-@property(strong,nonatomic)UIColor *disabledTitleColor;
-
 @end
 
 @implementation MNColoredButton
@@ -61,12 +57,6 @@
     self.layer.cornerRadius = radius;
 }
 
-- (void)_updateTitleColor
-{
-    self.titleLabel.textColor = self.isEnabled ? self.normalTitleColor : self.disabledTitleColor;
-    if (self.isHighlighted) self.titleLabel.textColor = self.highlightTitleColor;
-}
-
 - (void)_updateBackgroundColor
 {
     self.backgroundColor = self.isEnabled ? self.normalBackgroundColor : self.disabledBackgroundColor;
@@ -92,19 +82,7 @@
 
 - (void)setTitleColor:(UIColor *)color forState:(UIControlState)state
 {
-    switch (state) {
-        case UIControlStateNormal:
-            self.normalTitleColor = color;
-            break;
-        case UIControlStateDisabled:
-            self.disabledTitleColor = color;
-            break;
-        case UIControlStateHighlighted:
-            self.highlightTitleColor = color;
-        default:
-            break;
-    }
-    [self _updateTitleColor];
+    [super setTitleColor:color forState:state];
 }
 
 - (void)setEnabled:(BOOL)enabled
@@ -112,7 +90,6 @@
     [super setEnabled:enabled];
     
     [self _updateBackgroundColor];
-    [self _updateTitleColor];
 }
 
 - (void)setHighlighted:(BOOL)highlighted
@@ -120,7 +97,6 @@
     [super setHighlighted:highlighted];
     
     [self _updateBackgroundColor];
-    [self _updateTitleColor];
 }
 
 @end
