@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name     = 'MNColorKit'
   s.version  = '1.0.0'
-  s.license  = 'BSD'
+  s.license  = 'MIT'
   s.summary  = 'A utility belt of color related add-ons for UIKit.'
   s.homepage = 'https://github.com/madninja/MNColorKit'
   s.author   = { 
