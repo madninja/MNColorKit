@@ -22,8 +22,10 @@
 - (void)_setup
 {
     self.layer.cornerRadius = 2.0;
-    self.titleLabel.font = [UIFont boldSystemFontOfSize:12];
-    self.titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
+    if (!self.titleLabel) {
+        self.titleLabel.font = [UIFont boldSystemFontOfSize:12];
+        self.titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
+    }
 }
 
 - (id)init
