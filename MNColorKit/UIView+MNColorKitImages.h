@@ -10,6 +10,9 @@
 
 @interface UIImage (MNColorKitImages)
 + (UIImage *)mn_imageNamed:(NSString *)name withColor:(UIColor *)color;
++ (UIImage *)mn_imageWithColor:(UIColor *)color size:(CGSize)size;
++ (UIImage *)mn_imageWithColor:(UIColor *)color;
+
 - (UIImage *)mn_imageWithColor:(UIColor *)color;
 @end
 

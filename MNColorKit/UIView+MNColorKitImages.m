@@ -22,6 +22,29 @@
     return [img mn_imageWithColor:color];
 }
 
++ (UIImage *)mn_imageWithColor:(UIColor *)color size:(CGSize)size
+{
+    CGRect rect = CGRectMake(0.0, 0.0, size.width, size.height);
+    
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
++ (UIImage *)mn_imageWithColor:(UIColor *)color
+{
+    return [self mn_imageWithColor:color size:CGSizeMake(10, 10)];
+}
+
+
 - (UIImage *)mn_imageWithColor:(UIColor *)color
 {
     // begin a new image context, to draw our colored image onto
