@@ -8,11 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+static __inline CGFloat shiftAndMaskColorComponent(NSUInteger rgb, NSUInteger mask, NSUInteger bits)
+{
+    return (CGFloat)(((rgb & mask) >> bits) / 255.0);
+}
+
 static __inline UIColor *RGBXA(NSUInteger rgb, CGFloat alpha)
 {
-    return [UIColor colorWithRed:((float)((rgb & 0xFF0000) >> 16))/255.0
-                           green:((float)((rgb & 0xFF00) >> 8))/255.0
-                            blue:((float)(rgb & 0xFF))/255.0
+    return [UIColor colorWithRed:shiftAndMaskColorComponent(rgb, 0xFF0000, 16)
+                           green:shiftAndMaskColorComponent(rgb, 0xFF00, 8)
+                            blue:shiftAndMaskColorComponent(rgb, 0xFF, 0)
                            alpha:alpha];
 }
 
